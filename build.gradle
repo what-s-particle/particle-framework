@@ -1,0 +1,71 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.7.10' apply false
+    id 'org.jetbrains.dokka' version '1.7.10' apply false
+    id 'org.jlleitschuh.gradle.ktlint' version '10.2.1' apply false
+    id 'java-gradle-plugin'
+    id 'java-library'
+    id 'groovy'
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    tasks.withType(Jar).configureEach {
+        manifest {
+            attributes(
+                    'Implementation-Title': POM_NAME,
+                    'Implementation-Version': VERSION_NAME,
+                    'Built-By': System.getProperty('user.name'),
+                    'Built-JDK': System.getProperty('java.version'),
+                    'Built-Gradle': gradle.gradleVersion)
+        }
+    }
+
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+        kotlinOptions {
+            jvmTarget = JavaVersion.VERSION_1_8
+        }
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+
+        configure(options) {
+            compilerArgs << '-Xlint:all'
+            compilerArgs << '-Xlint:-options'
+            encoding = 'utf-8'
+            fork = true
+        }
+    }
+
+    tasks.withType(GroovyCompile).configureEach {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+
+        configure(options) {
+            compilerArgs << '-Xlint:all'
+            compilerArgs << '-Xlint:-options'
+            encoding = 'utf-8'
+            fork = true
+        }
+    }
+
+    tasks.withType(Test).configureEach {
+        useJUnitPlatform()
+
+        testLogging {
+            exceptionFormat 'full'
+            showCauses true
+            showExceptions true
+            showStackTraces true
+            showStandardStreams true
+            events 'passed', 'failed', 'skipped'
+        }
+
+        def maxWorkerCount = gradle.startParameter.maxWorkerCount
+        maxParallelForks = (maxWorkerCount < 2) ? 1 : maxWorkerCount / 2
+    }
+}
