@@ -67,23 +67,9 @@ publishing {
 
                 developers {
                     developer {
-                        id = 'ben-manes'
-                        name = 'Ben Manes'
-                        email = 'ben.manes@gmail.com'
-                    }
-                    developer {
-                        id = 'zenedith'
-                        name = 'Zenedith'
-                        email = 'zenedith@wp.pl'
-                    }
-                    developer {
-                        id = 'jochenberger'
-                        name = 'Jochen Berger'
-                    }
-                    developer {
-                        id = 'jaredsburrows'
-                        name = 'Jared Burrows'
-                        email = 'jaredsburrows@gmail.com'
+                        id = 'yunlongwen'
+                        name = 'yunlong.wen'
+                        email = '350394277@qq.com'
                     }
                 }
 
@@ -110,7 +96,7 @@ pluginBundle {
 gradlePlugin {
     plugins {
         versionsPlugin {
-            id = 'com.github.ben-manes.versions'
+            id = 'com.github.WHAT-S-SDUI.framework'
             displayName = POM_NAME
             implementationClass = 'com.github.benmanes.gradle.versions.VersionsPlugin'
             description = POM_DESCRIPTION
