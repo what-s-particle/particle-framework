@@ -1,7 +1,3 @@
-SDUI Android client
-
-SDUI Android client
-
 # 思考1:Navigation的设计。
 
 Navigation指的是页面之间的跳转，它的设计决定了整个树结构。
