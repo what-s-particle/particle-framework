@@ -8,6 +8,6 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Action(
-    val trigger: Trigger = Trigger.NULL,
+    val trigger: Trigger = Trigger.DEFAULT,
     val effects: MutableList<Effect> = mutableListOf()
 )

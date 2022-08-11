@@ -1,6 +1,6 @@
 package com.yurnero.sdui.framework.component.route
 
-import com.yurnero.sdui.framework.component.layout.Component
+import com.yurnero.sdui.framework.component.basic.Component
 import kotlinx.serialization.Serializable
 
 
@@ -11,6 +11,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Screen(
     val id: String,
-    var content: Component? = null,
-    var active: Boolean = false
+    val content: Component? = null,
+    val active: Boolean = false
 )

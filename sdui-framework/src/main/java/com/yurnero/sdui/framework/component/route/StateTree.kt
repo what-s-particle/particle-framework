@@ -8,6 +8,6 @@ import kotlinx.serialization.Serializable
  * @date 2022.03.11
  */
 @Serializable
-data class StateTree(
-    var screens: MutableList<Screen> = mutableListOf()
+data class Whole(
+    val screens: MutableList<Screen> = mutableListOf()
 )

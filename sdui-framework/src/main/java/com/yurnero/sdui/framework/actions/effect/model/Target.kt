@@ -1,4 +1,4 @@
-package com.yurnero.sdui.framework.actions
+package com.yurnero.sdui.framework.actions.effect.model
 
 import kotlinx.serialization.Serializable
 

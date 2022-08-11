@@ -1,4 +1,4 @@
-package com.yurnero.sdui.framework.actions
+package com.yurnero.sdui.framework.actions.effect
 
 import com.yurnero.sdui.framework.component.route.LaunchMode
 import kotlinx.serialization.Serializable

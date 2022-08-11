@@ -5,7 +5,10 @@ package com.yurnero.sdui.framework.actions
  * @date 2022.03.11
  */
 enum class Trigger {
-    NULL,
-    RESUME,
-    CLICK
+    APPEAR,
+    BACK,
+    CLICK,
+    DEEPLINK,
+    DEFAULT,
+    RESUME
 }
