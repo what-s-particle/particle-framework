@@ -7,6 +7,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class HorizontalStack(
     val elements: MutableList<Component> = mutableListOf(),
-    val arrangement: ArrangementToken?,
-    val alignment: AlignmentToken?
+    val arrangement: ArrangementToken? = null,
+    val alignment: AlignmentToken? = null
 )

@@ -5,6 +5,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Border(
     val width: Double,
-    val colorToken: ColorToken?,
+    val colorToken: ColorToken? = null,
     val colorValue: Int?
 )

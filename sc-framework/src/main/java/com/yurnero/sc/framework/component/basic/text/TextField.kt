@@ -8,15 +8,15 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class TextField(
     val value: String,
-    val onValueChange: MutableList<Effect>?,
-    val colorToken: ColorToken?,
-    val colorValue: Int?,
-    val weightToken: FontWeightToken?,
-    val sizeToken: SizeToken?,
-    val sieValue: Double?,
-    val styleToken: FontStyleToken?,
-    val familyToken: FontFamilyToken?,
-    val textDecoration: MutableList<TextDecorationToken>?,
-    val textAlignment: TextAlignmentToken?,
-    val maxLine: Int?
+    val onValueChange: MutableList<Effect>? = null,
+    val colorToken: ColorToken? = null,
+    val colorValue: Int? = null,
+    val weightToken: FontWeightToken? = null,
+    val sizeToken: SizeToken? = null,
+    val sieValue: Double? = null,
+    val styleToken: FontStyleToken? = null,
+    val familyToken: FontFamilyToken? = null,
+    val textDecoration: MutableList<TextDecorationToken>? = null,
+    val textAlignment: TextAlignmentToken? = null,
+    val maxLine: Int? = null
 )

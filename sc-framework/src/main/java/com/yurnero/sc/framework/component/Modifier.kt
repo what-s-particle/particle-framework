@@ -11,17 +11,17 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Modifier(
-    var backgroundColor: ColorToken?,
-    var visibility: Boolean?,
-    var padding: PaddingModifier?,
-    var roundedCorner: SizeToken?,
-    var widthValue: Double?,
-    var heightValue: Double?,
-    var fillToken: FillToken?,
-    var border: Border?,
-    var shadow: Shadow?,
-    var priority: Int?,
-    var weight: Float?,
-    var drawBefore: Draw?,
-    var drawBehind: Draw?
+    var backgroundColor: ColorToken? = null,
+    var visibility: Boolean? = null,
+    var padding: PaddingModifier? = null,
+    var roundedCorner: SizeToken? = null,
+    var widthValue: Double? = null,
+    var heightValue: Double? = null,
+    var fillToken: FillToken? = null,
+    var border: Border? = null,
+    var shadow: Shadow? = null,
+    var priority: Int? = null,
+    var weight: Float? = null,
+    var drawBefore: Draw? = null,
+    var drawBehind: Draw? = null
 )

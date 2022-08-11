@@ -9,8 +9,8 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Path(
-    val colorValue: Int?,
-    val colorToken: ColorToken?,
+    val colorValue: Int? = null,
+    val colorToken: ColorToken? = null,
     val start: Offset,
     val relativeLineTo: MutableList<Offset> = mutableListOf()
 )

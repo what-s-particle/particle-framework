@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Shadow(
     val offset: Offset,
-    val colorValue: Int?,
-    val colorToken: ColorToken?,
+    val colorValue: Int? = null,
+    val colorToken: ColorToken? = null,
     val radius: Double
 )

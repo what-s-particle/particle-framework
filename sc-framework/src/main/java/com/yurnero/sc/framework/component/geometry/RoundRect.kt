@@ -9,8 +9,8 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class RoundRect(
-    val colorValue: Int?,
-    val colorToken: ColorToken?,
+    val colorValue: Int? = null,
+    val colorToken: ColorToken? = null,
     val width: Float,
     val height: Float,
     val radius: Offset
