@@ -8,4 +8,4 @@ import kotlinx.serialization.Serializable
  * @date 2022.03.11
  */
 @Serializable
-data class RouteEffect(val id: String, val mode: LaunchMode)
+data class RouteEffect(var id: String, var mode: LaunchMode)

@@ -9,9 +9,9 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Line(
-    val colorValue: Int? = null,
-    val colorToken: ColorToken? = null,
-    val start: Offset,
-    val end: Offset,
-    val width: Float
+    var colorValue: Int? = null,
+    var colorToken: ColorToken? = null,
+    var start: Offset,
+    var end: Offset,
+    var width: Float
 )

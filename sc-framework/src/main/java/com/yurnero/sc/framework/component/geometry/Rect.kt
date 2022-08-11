@@ -9,8 +9,8 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Rect(
-    val colorValue: Int? = null,
-    val colorToken: ColorToken? = null,
-    val width: Float,
-    val height: Float
+    var colorValue: Int? = null,
+    var colorToken: ColorToken? = null,
+    var width: Float,
+    var height: Float
 )

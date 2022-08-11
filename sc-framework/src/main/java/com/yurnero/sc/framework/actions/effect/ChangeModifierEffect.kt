@@ -10,6 +10,6 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class ChangeModifierEffect(
-    val target: Target,
-    val modifier: Modifier? = null
+    var target: Target,
+    var modifier: Modifier? = null
 )

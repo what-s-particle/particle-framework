@@ -10,7 +10,7 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Screen(
-    val id: String,
-    val content: Component? = null,
-    val active: Boolean = false
+    var id: String,
+    var content: Component? = null,
+    var active: Boolean = false
 )

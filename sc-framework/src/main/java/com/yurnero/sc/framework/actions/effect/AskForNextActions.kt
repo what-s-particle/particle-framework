@@ -12,6 +12,6 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class AskForNextActionsEffect(
-    val path: String,
-    val requestData: MutableMap<String, String>? = mutableMapOf(),
+    var path: String,
+    var requestData: MutableMap<String, String>? = mutableMapOf(),
 )

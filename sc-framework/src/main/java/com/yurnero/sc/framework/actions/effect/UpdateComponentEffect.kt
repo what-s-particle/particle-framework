@@ -11,9 +11,9 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class UpdateComponentEffect(
-    val path: String,
-    val type: ComponentType,
-    val target: Target,
-    val successEffects: MutableList<Effect>? = mutableListOf(),
-    val failedEffects: MutableList<Effect>? = mutableListOf()
+    var path: String,
+    var type: ComponentType,
+    var target: Target,
+    var successEffects: MutableList<Effect>? = mutableListOf(),
+    var failedEffects: MutableList<Effect>? = mutableListOf()
 )

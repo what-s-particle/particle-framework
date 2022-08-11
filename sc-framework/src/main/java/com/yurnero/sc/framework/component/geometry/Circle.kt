@@ -9,8 +9,8 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Circle(
-    val colorValue: Int? = null,
-    val colorToken: ColorToken? = null,
-    val radius: Float,
-    val center: Offset? = null,
+    var colorValue: Int? = null,
+    var colorToken: ColorToken? = null,
+    var radius: Float,
+    var center: Offset? = null,
 )

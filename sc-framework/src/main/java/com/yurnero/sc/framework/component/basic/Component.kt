@@ -13,13 +13,13 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Component(
-    val id: String,
-    val modifier: Modifier? = null,
-    val actions: MutableList<Action> = mutableListOf(),
-    val horizontalStack: HorizontalStack? = null,
-    val verticalStack: VerticalStack? = null,
-    val textView: TextView? = null,
-    val button: Button? = null,
-    val textField: TextField? = null,
-    val draw: Draw? = null
+    var id: String,
+    var modifier: Modifier? = null,
+    var actions: MutableList<Action> = mutableListOf(),
+    var horizontalStack: HorizontalStack? = null,
+    var verticalStack: VerticalStack? = null,
+    var textView: TextView? = null,
+    var button: Button? = null,
+    var textField: TextField? = null,
+    var draw: Draw? = null
 )

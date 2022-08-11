@@ -10,9 +10,9 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class HttpRequestEffect(
-    val path: String,
-    val requestData: MutableMap<String, String>? = mutableMapOf(),
-    val requestType: RequestType,
-    val successEffects: MutableList<Effect>? = mutableListOf(),
-    val failedEffects: MutableList<Effect>? = mutableListOf()
+    var path: String,
+    var requestData: MutableMap<String, String>? = mutableMapOf(),
+    var requestType: RequestType,
+    var successEffects: MutableList<Effect>? = mutableListOf(),
+    var failedEffects: MutableList<Effect>? = mutableListOf()
 )

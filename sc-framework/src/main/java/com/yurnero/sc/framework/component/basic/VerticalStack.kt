@@ -10,7 +10,7 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class VerticalStack(
-    val elements: MutableList<Component> = mutableListOf(),
-    val arrangement: ArrangementToken? = null,
-    val alignment: AlignmentToken? = null
+    var elements: MutableList<Component> = mutableListOf(),
+    var arrangement: ArrangementToken? = null,
+    var alignment: AlignmentToken? = null
 )

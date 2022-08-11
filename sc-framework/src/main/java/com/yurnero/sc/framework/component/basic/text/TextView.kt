@@ -6,15 +6,15 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class TextView(
-    val text: String,
-    val colorToken: ColorToken? = null,
-    val colorValue: Int? = null,
-    val weightToken: FontWeightToken? = null,
-    val sizeToken: SizeToken? = null,
-    val sieValue: Double? = null,
-    val styleToken: FontStyleToken? = null,
-    val familyToken: FontFamilyToken? = null,
-    val textDecoration: MutableList<TextDecorationToken>? = null,
-    val textAlignment: TextAlignmentToken? = null,
-    val maxLine: Int? = null
+    var text: String,
+    var colorToken: ColorToken? = null,
+    var colorValue: Int? = null,
+    var weightToken: FontWeightToken? = null,
+    var sizeToken: SizeToken? = null,
+    var sieValue: Double? = null,
+    var styleToken: FontStyleToken? = null,
+    var familyToken: FontFamilyToken? = null,
+    var textDecoration: MutableList<TextDecorationToken>? = null,
+    var textAlignment: TextAlignmentToken? = null,
+    var maxLine: Int? = null
 )

@@ -14,9 +14,9 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Draw(
-    val drawRect: Rect? = null,
-    val drawCircle: Circle? = null,
-    val drawLine: Line? = null,
-    val drawRoundRect: RoundRect? = null,
-    val drawPath: Path? = null
+    var drawRect: Rect? = null,
+    var drawCircle: Circle? = null,
+    var drawLine: Line? = null,
+    var drawRoundRect: RoundRect? = null,
+    var drawPath: Path? = null
 )

@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Whole(
-    val screens: MutableList<Screen> = mutableListOf()
+    var screens: MutableList<Screen> = mutableListOf()
 )

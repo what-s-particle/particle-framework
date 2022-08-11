@@ -4,6 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Offset(
-    val xOffset: Float,
-    val yOffset: Float
+    var xOffset: Float,
+    var yOffset: Float
 )

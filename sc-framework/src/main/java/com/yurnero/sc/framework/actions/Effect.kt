@@ -10,6 +10,6 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Effect(
-    val changeModifierEffect: ChangeModifierEffect? = null,
-    val routeEffect: RouteEffect? = null
+    var changeModifierEffect: ChangeModifierEffect? = null,
+    var routeEffect: RouteEffect? = null
 )

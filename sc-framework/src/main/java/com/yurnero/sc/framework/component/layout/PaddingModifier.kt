@@ -5,8 +5,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class PaddingModifier(
-    val start: SizeToken = SizeToken.NONE,
-    val top: SizeToken = SizeToken.NONE,
-    val end: SizeToken = SizeToken.NONE,
-    val bottom: SizeToken = SizeToken.NONE,
+    var start: SizeToken = SizeToken.NONE,
+    var top: SizeToken = SizeToken.NONE,
+    var end: SizeToken = SizeToken.NONE,
+    var bottom: SizeToken = SizeToken.NONE,
 )

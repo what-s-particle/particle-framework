@@ -4,6 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Target(
-    val screenId: String,
-    val componentId: String
+    var screenId: String,
+    var componentId: String
 )

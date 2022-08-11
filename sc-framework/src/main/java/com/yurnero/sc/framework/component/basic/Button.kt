@@ -8,6 +8,6 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Button(
-    val content: Component? = null,
-    val enabled: Boolean? = null
+    var content: Component? = null,
+    var enabled: Boolean? = null
 )
