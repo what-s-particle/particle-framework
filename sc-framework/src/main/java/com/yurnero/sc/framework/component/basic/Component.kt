@@ -21,5 +21,7 @@ data class Component(
     var textView: TextView? = null,
     var button: Button? = null,
     var textField: TextField? = null,
-    var draw: Draw? = null
+    var draw: Draw? = null,
+    var icon: Icon? = null,
+    var navigation: Navigation? = null
 )
