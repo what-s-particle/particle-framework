@@ -1,6 +1,6 @@
 package com.yurnero.particle.framework.component.route
 
-import com.yurnero.particle.framework.component.basic.Component
+import com.yurnero.particle.framework.Particle
 import kotlinx.serialization.Serializable
 
 
@@ -11,6 +11,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Screen(
     var id: String,
-    var content: Component? = null,
+    var content: Particle? = null,
     var active: Boolean = false
 )

@@ -1,5 +1,6 @@
 package com.yurnero.particle.framework.component.basic
 
+import com.yurnero.particle.framework.Particle
 import kotlinx.serialization.Serializable
 
 /**
@@ -8,6 +9,6 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class Button(
-    var content: Component? = null,
+    var content: Particle? = null,
     var enabled: Boolean? = null
 )

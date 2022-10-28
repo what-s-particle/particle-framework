@@ -1,7 +1,13 @@
-package com.yurnero.particle.framework.component.basic
+package com.yurnero.particle.framework
 
 import com.yurnero.particle.framework.actions.Action
 import com.yurnero.particle.framework.component.Modifier
+import com.yurnero.particle.framework.component.basic.Button
+import com.yurnero.particle.framework.component.basic.Draw
+import com.yurnero.particle.framework.component.basic.HorizontalStack
+import com.yurnero.particle.framework.component.basic.Icon
+import com.yurnero.particle.framework.component.basic.Navigation
+import com.yurnero.particle.framework.component.basic.VerticalStack
 import com.yurnero.particle.framework.component.basic.text.TextField
 import com.yurnero.particle.framework.component.basic.text.TextView
 import kotlinx.serialization.Serializable
@@ -12,7 +18,7 @@ import kotlinx.serialization.Serializable
  * @date 2022.03.11
  */
 @Serializable
-data class Component(
+data class Particle(
     var id: String,
     var modifier: Modifier? = null,
     var actions: MutableList<Action> = mutableListOf(),
