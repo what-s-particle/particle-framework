@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "sc_framework"
-include ':sc-framework'
+rootProject.name = "particle_framework"
+include ':particle-framework'
